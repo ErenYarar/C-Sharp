@@ -1,0 +1,15 @@
+static void Main(string[] args)
+        {
+            int sayi1;
+            int sayi2;
+            Console.Write("Ilk sayınızı giriniz: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Ikinci sayınızı giriniz: ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Toplam: " + (sayi1 + sayi2)
+                + "\nFark: " + (sayi1 - sayi2)
+                + "\nCarpim: " + (sayi1 * sayi2)
+                + "\nBölüm: " +(sayi1 / sayi2));
+            Console.ReadKey();
+
+        }
