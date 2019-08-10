@@ -1,0 +1,16 @@
+Console.WriteLine("Yaşın kaç?");
+            int age = Convert.ToInt32(Console.ReadLine());
+            if (age < 18)
+            {
+                Console.WriteLine("18 yaşından küçükler giremez...");
+            }
+            else if (age == 18)
+            {
+                Console.WriteLine("Çok şanslısın!!Yaşın kurtarıyor...");
+            }
+            else
+            {
+                Console.WriteLine("Hoşgeldiniz...");
+            }
+            Console.ReadKey();
+            }}}
