@@ -1,0 +1,15 @@
+static void Main(string[] args)
+        {
+            int sayi1 = 10;
+            int sayi2 = 5;
+
+            Console.WriteLine("İlk sayı = 10"
+                + "\nİkinci sayı = 5"
+                + "\n---------------------------"
+                + "\nToplam: " + (sayi1 + sayi2)
+                + "\nFark: " + (sayi1 - sayi2)
+                + "\nCarpim: " + (sayi1 * sayi2)
+                + "\nBölüm: " +(sayi1 / sayi2));
+            Console.ReadKey();
+
+        }
