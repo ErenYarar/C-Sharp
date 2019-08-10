@@ -1,0 +1,15 @@
+static void Main(string[] args)
+        {
+            Start:
+            int sayi1;
+            int sayi2;
+            Console.Write("ilk sayı: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("ikinci sayı: ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Girdiğiniz ilk sayı olan " + sayi1 + " ile " + sayi2 + " sayısının bölümü " + (sayi1 / sayi2));
+            Console.ReadKey();
+
+            Console.WriteLine(); //Boşluk oluşturduk
+            goto Start; //Loop
+        }
