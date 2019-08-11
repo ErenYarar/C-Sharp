@@ -1,0 +1,20 @@
+static void Main(string[] args)
+        {
+           
+            int sayi1 = 10;
+            int sayi2 = 5;
+            Console.WriteLine("ilk sayı: " + sayi1 +"\nikinci sayı: " + sayi2);
+            Console.WriteLine("Bölümleri kaçtır?");
+            int sonuc = Convert.ToInt32(Console.ReadLine());
+            
+            if (sonuc == sayi1 / sayi2 )
+            {
+                Console.WriteLine("Dogru");
+            }
+           //Start:
+            else
+            {
+                Console.WriteLine("Yanlış");
+            }
+            Console.ReadKey();
+        }
