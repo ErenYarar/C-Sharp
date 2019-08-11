@@ -1,0 +1,21 @@
+static void Main(string[] args)
+        {
+            Random randomDöndürme = new Random();
+           
+            int sayi1 = randomDöndürme.Next(1,11);
+            int sayi2 = randomDöndürme.Next(1, 11);
+            Console.WriteLine("ilk sayı: " + sayi1 +"\nikinci sayı: " + sayi2);
+            Console.WriteLine("Carpımı kactır?");
+            int sonuc = Convert.ToInt32(Console.ReadLine());
+            
+            if (sonuc == sayi1 * sayi2 )
+            {
+                Console.WriteLine("Dogru");
+            }
+           //Start:
+            else
+            {
+                Console.WriteLine("Yanlış");
+            }
+            Console.ReadKey();
+        }
