@@ -1,0 +1,45 @@
+static void Main(string[] args)
+        {
+            string isim = "eren";
+            string sifre = "1234";
+            int hak = 3;
+            while(true){
+                Console.WriteLine("isminiz: ");
+                string ad = Convert.ToString(Console.ReadLine());
+
+                Console.WriteLine("Sifreniz: ");
+                string parola = Convert.ToString(Console.ReadLine());
+
+                if (isim == ad && sifre == parola)
+                {
+                    Console.WriteLine("Hoşgeldiniz");
+                    break;
+                }
+                else if (isim != ad && sifre == parola)
+                {
+                    Console.WriteLine("isminizi ve ya şifrenizi yanlış girdiniz");
+                    hak -= 1;
+                    Console.WriteLine("Kalan hakkınız: " + hak);
+                }
+                else if (isim == ad && sifre != parola)
+                {
+                    Console.WriteLine("isminizi ve ya şifrenizi yanlış girdiniz");
+                    hak -= 1;
+                    Console.WriteLine("Kalan hakkınız: " + hak);
+                }
+                else if (isim != ad && sifre != parola)
+                {
+                    Console.WriteLine("isminizi ve ya şifrenizi yanlış girdiniz");
+                    hak -= 1;
+                    Console.WriteLine("Kalan hakkınız: " + hak);
+                }
+
+                if (hak == 0)
+                {
+                    Console.WriteLine("Hakkınız bitmiştir: " + hak);
+                    break;
+                }
+            }
+            Console.WriteLine();
+            Console.ReadKey();           
+        }   
